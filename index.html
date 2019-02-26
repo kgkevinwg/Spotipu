@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/index.css" />
+    <link rel="stylesheet" href="assets/landing.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    
+    <title>Spotipu!</title>
+</head>
+<body class="body-index">
+    
+
+    <div id="background">
+        <div id="container">
+            <div id="leftContainer-menu">
+                <form id="loginForm" method="POST" onsubmit="login()"> 
+                    <h2>Login to your Spotipu Account</h2>
+                    <p>
+                        <span id="err-username" class="errMessage"></span>
+                        <label for="login-username">Username</label>
+                        <input id="login-username"type="text" placeholder="Cheesie">
+                    </p>
+                    <p>
+                        <span id="err-password" class="errMessage"></span>
+                        <label for="login-password">Password</label>
+                        <input id="login-password" type="password" placeholder="letmein">
+                    </p>
+                    <button type="submit" name="login-button">LOG IN</button>
+                   
+                </form>
+                <div id="signup-offer" onclick="showSignupOffer()">
+                    <span>Don't have an account yet? Signup Here.</span>
+                </div>
+
+                <form id="registerForm" method="post" onsubmit="register()">
+                    <h2>Create your free account</h2>
+                    <p>
+                        <span id="err-signup-username" class="errMessage"></span>
+                        <label for="signup-username">Username</label>
+                        <input id="signup-username"type="text" placeholder="">
+                    </p>
+                    <p>
+                        <span id="err-signup-email" class="errMessage"></span>
+                        <label for="signup-email">Email</label>
+                        <input id="signup-email"type="text" placeholder="">
+                    </p>
+                    <p>
+                        <span id="err-signup-password" class="errMessage"></span>
+                        <label for="signup-password">Password</label>
+                        <input id="signup-password"type="password" placeholder="">
+                    </p>
+                    <p>
+                        <span id="err-signup-passwordconf" class="errMessage"></span>
+                        <label for="signup-passwordconf">Confirm Password </label>
+                        <input id="signup-passwordconf"type="password" placeholder="">
+                        </p>
+                    <button type="submit">SIGN UP</button>
+                </form>
+                <div id="login-offer" onclick="showLoginOffer()">
+                    <span>Already have an account? login Here.</span>
+                </div>
+            </div>
+            <div id="rightContainer-menu">
+                <h1>Get the right music, right now</h1>
+                <h2>to millions of Songs for free.</h2> 
+                <ul>
+                    <li>Search & discover music you'll love</li>
+                    <li>Create Playlist of your favourite music</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- <script src="assets/index.js"></script> -->
+<script src="assets/landing.js"></script>  
+</body>
+</html>
