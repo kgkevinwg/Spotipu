@@ -1093,9 +1093,6 @@ function initSound(_callback)
 {
     ext = ".mp3";
     agent = navigator.userAgent.toLowerCase();
-    if(agent.indexOf('firefox') != -1 || agent.indexOf('opera') != -1) {
-        ext = ".ogg";
-    }
     audio.src = "assets/songs/"+song_queue[0][1]+"-"+song_queue[0][2]+"-"+song_queue[0][3]+ext;
     audio.loop = false;
     audio.volume = 1;
@@ -1106,7 +1103,7 @@ function initSound(_callback)
     audio.addEventListener("timeupdate",timeUpdate);
     audio.addEventListener("ended",switchSong);
 
-    _callback();
+    _callback && _callback();
 }
 
 function initAudioPlayer()
